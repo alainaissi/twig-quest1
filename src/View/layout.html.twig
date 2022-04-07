@@ -12,9 +12,9 @@
     <link rel="icon" href="/assets/images/favicon.png">
 </head>
 
+
 <body>
-    {% block content %}
-        {% include 'component/_navbar.html.twig' %}
-    {% endblock %}
+    {{ include ('_navbar.html.twig') }}
+    {% block content %}{% endblock %}
 </body>
 </html>
